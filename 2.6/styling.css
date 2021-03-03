@@ -1,0 +1,241 @@
+body {
+    width: 500px;
+}
+img, form, footer, table, p, article,figure, aside, video, header, h2, blockquote, audio, details, main{
+    width: 500px;
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+header > nav > a {
+    display:block;
+    float: none;
+    text-align: center;
+    padding: 14px 16px;
+    cursor: grab;
+    font-family: Arial;
+    text-decoration: none;
+  
+}
+header {
+    background-color: gray;
+    padding: 10px;
+    margin: 0;
+}
+
+a:link {
+    background-color: gray;
+    color: black;
+}
+  
+a:visited {
+    color: white;
+}
+  
+a:hover {
+    background-color: blue;
+}
+  
+a:active {
+    background-color: black;
+    color: white;
+}
+ 
+header>h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: square inside none;
+}
+ol {
+    list-style:armenian inside none;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+}
+
+table {
+    table-layout: inherit;
+    border-style: solid;
+    border-width: 1px;
+}
+
+pre {
+    white-space: pre-wrap;
+    width: 300px;
+}
+
+@font-face { font-family: JuneBug; src: url('JUNEBUG.TTF'); }
+
+p {
+    color: gray;
+    font: 15px Arial, sans-serif;
+}
+
+pre {
+    color: #03fc88;
+    letter-spacing:10px; 
+}
+
+h1 {
+    font: 40px JuneBug, sans-serif;
+}
+
+h2 {
+    font: 20px Arial, sans-serif;
+}
+
+@media print {
+    body{
+        width: 100%;
+    }
+    header, audio, video {
+        display: none;
+    }
+    img, footer, form, header, table, p, article,figure, aside, video, h2, blockquote, audio, details, main{
+        width: 90%;
+        margin: 0%;
+        margin-top: 2%;
+        padding: 0%;
+    }
+
+    pre {
+        width: 90%;
+    }  
+}
+
+  @media only screen and (min-width: 510px) {
+    body{
+        width: 100%;
+    }
+    img, footer, form, header, table, p, article,figure, aside, video, h2, blockquote, audio, details, main{
+        width: 100%;
+        margin: 0%;
+        margin-top: 2%;
+        padding: 0%;
+    }
+
+    pre {
+        width: 90%;
+    }   
+ }
+
+ @media only screen and (min-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    footer,form, p, article, aside, header, h2, blockquote, details, main{
+        width: 98%;
+        margin: 2%;
+    }
+    p,pre{
+        column-count: 2;
+    }
+    table, img, audio, video {
+        width: 70%;
+        margin: 3%;
+    }
+
+    header {
+        display:inline-block;
+    }
+
+    header>nav {
+        overflow: hidden;
+    }  
+    header > nav > a {
+        margin-left: 3%;
+        float: left;
+    }
+    header > h1 {
+        margin: 0;
+        float:left;
+    }
+ }
+ 
+ @media only screen and (min-width: 992px) {
+     article, main {
+         position: relative;
+         margin: 0%;
+     }
+   
+    aside {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        margin: 0;
+        margin-left: 3%;
+    }
+
+    dl, table, audio, video, p, pre, img{
+        width: 40%;
+        margin-top: 0;
+    }
+    dl, table {
+        margin: 3%;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    video {
+        position: absolute;
+        left: 0%;
+        top: 100%;
+    }
+    blockquote {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+    }
+    audio {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+    }
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+    body, header {
+        width: 1200px;
+    }
+
+    article, main {
+        margin: 0px;
+    }
+
+    aside {
+        left: 600px;
+        top: 20px;
+        margin-left: 10px;
+    }
+
+    dl, table, audio, video, p, pre, img {
+        width: 500px;
+    }
+    form {
+        width: 600px;
+    }
+
+    video {
+        left: 0px;
+        bottom: 0px;
+        width: 480px;
+    }
+   
+   blockquote {
+       left: 600px;
+       top: 80px;
+   }
+   audio {
+       left: 600px;
+       top: 220px;
+   }
+
+ } 
