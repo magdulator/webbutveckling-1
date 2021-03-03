@@ -59,6 +59,7 @@ footer {
 }
 
 table {
+    table-layout: inherit;
     border-style: solid;
     border-width: 1px;
 }
