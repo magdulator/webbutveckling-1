@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "author" content="magda">
+        <meta name="description" content="future document">
+        <meta name = "generator" content="Visual Studio Code">
+        <meta name = "keywords" content="HTML, CSS">
+        <meta name = "robots" content="index">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styling.css">
+        <title>home</title>
+    </head>
+    <body>
+        <header>
+            <h1>Meny</h1>
+            <nav>
+                <a href="home.html">Hem</a> |
+                <a href="now.html">Nutid</a> |
+                <a href="history.html">Dåtid</a> |
+                <a href="future.html">Framtid</a>
+            </nav>
+        </header>
+        <section>
+            <h2>Information om delsidorna</h2>
+            <p>På denna webbsidan så finns det förutom denna, tre andra delsidor 
+            som innehåller information av mina intressen. Det finns tre sidor för att 
+            dela upp informationen, nutid, dåtid och framtid. </p>
+            <blockquote cite = "https://sv.wiktionary.org/wiki/fritidsintresse"><h3>
+                Citat från wikipedia:</h3>
+                <pre>fritidsintresse: intresse och aktivitet som en person utövar på sin fritid till stor del för nöjes skull</pre></blockquote>
+                <audio controls>
+                    <source src="citat.mp3" type="audio/mpeg">
+                </audio> 
+            <details>
+                <summary>
+                   <mark>Extra information</mark>
+                </summary>
+                <p>Du kan navigera dig genom alla sidor från alla sidor genom menyn</p>
+            </details>
+        </section>
+        <main>
+            <form action = "https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" enctype="multipart/form-data" method="post">
+                <fieldset>
+                <legend>Fyll i formulär:</legend>
+                <label for="name">Namn: </label>
+                <input type="text" id="name" name="name" placeholder="Namn" autofocus required title="Skriv ditt namn"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Ej giltig email"><br>
+                <label for="homepage">Hemsida:</label>
+                <input list="url" id="homepage" name="homepage" placeholder="Hemsida"><br>
+                <datalist id="homepage">
+                    <option value="facebook">
+                    <option value="twitter">
+                    <option value="instagram">
+                </datalist>
+                <label for="respond">Vill ha svar:</label>
+                <input type="checkbox" id="respond" name="respond"><br>
+                <label for="copy">Kopia</label>
+                <input type="radio" id="copy" name="copy">
+                <label for="no-copy">Ingen kopia</label>
+                <input type="radio" id="no-copy" name="no-copy"><br>
+                <label for="subject">Ämne: </label>
+                <select id="subject" name="subject">
+                    <option value="change">Förslag på förändring</option>
+                    <option value="contact">Kontakt för samtal</option>
+                    <option value="other">Övrigt</option>
+                </select><br>
+                <label for="filename">Ladda upp fil</label>
+                <input type="file" id="file" name="file"><br>
+                <label for="message">Meddelande: </label>
+                <textarea id="message" name="message" placeholder="Skriv ett meddelande.." required title="Skriv ett meddelande"></textarea><br>
+                <input type ="submit" value="Skicka">
+                </fieldset>
+
+            </form>
+            <table>
+                <caption>Toppintressen från tidsperioderna</caption>
+                <thead>
+                    <tr>
+                        <th>Tidsperiod</th>
+                        <th>Favoritintresse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dåtid</td>
+                        <td>Klättring</td>
+                    </tr>
+                    <tr>
+                        <td>Nutid</td>
+                        <td>Plugga färdigt</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Framtid</td>
+                        <td>Flytta utomlands</td>
+                    </tr>
+                </tfoot>
+            </table> 
+            <aside>
+                <figure>
+                    <img src="tid.png">
+                    <figcaption>Figur 1 - Bild på tidsperioder från dåtid till framtid</figcaption>
+                </figure>
+            </aside>
+        </main>
+        <footer>
+            Författare: Magda Andersson 
+            <a href="mailto:magany-7@student.ltu.se">Skicka ett mejl</a>
+        </footer>   
+    </body>  
+</html>
