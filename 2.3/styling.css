@@ -12,6 +12,34 @@ header > nav > a {
     display:block;
     float: none;
     text-align: center;
+    padding: 14px 16px;
+    cursor: grab;
+    font-family: Arial;
+    text-decoration: none;
+  
+}
+header {
+    background-color: gray;
+    padding: 10px;
+    margin: 0;
+}
+
+a:link {
+    background-color: gray;
+    color: black;
+}
+  
+a:visited {
+    color: white;
+}
+  
+a:hover {
+    background-color: blue;
+}
+  
+a:active {
+    background-color: black;
+    color: white;
 }
  
 header>h1 {
