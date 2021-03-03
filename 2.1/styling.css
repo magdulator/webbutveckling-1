@@ -1,0 +1,167 @@
+  /* extra small, under 500px FIXED POS */
+
+body, img, form, p, article, figure, video{
+    width: 500px;
+    margin: 0px;
+    padding: 0;
+}
+
+header > nav > a {
+    display:block;
+    float: none;
+    text-align: center;
+
+}
+ 
+header>h1 {
+    text-align: center;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    width: 300px;
+}
+
+
+
+ 
+ /*small, 500-600px FLOTING POS  */
+ @media only screen and (min-width: 510px) {
+    body {
+        width: 100%;
+    }
+    img, form, p, article, aside, video, header, h2, blockquote, audio, details, main{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    pre {
+        width: 90%;
+    }   
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) FLOATING POS */
+ @media only screen and (min-width: 600px) {
+
+
+    body {
+        width: 100%;
+    }
+
+    img, form, p, article, aside, video, header, h2, blockquote, audio, details, main{
+        width: 98%;
+        margin: 2%;
+    }
+
+    header {
+
+        display:inline-block;
+    }
+
+    header>nav {
+        overflow: hidden;
+    }  
+    header > nav > a {
+        margin-left: 3%;
+        float: left;
+    }
+    header > h1 {
+        margin: 0;
+        float:left;
+    }
+
+ }
+ 
+
+ /* Large devices (laptops/desktops, 992px and up) FLOATING POSITION */
+ @media only screen and (min-width: 992px) {
+     article {
+         position: relative;
+         margin: 0%;
+     }
+   
+    aside {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+    }
+
+    p, pre {
+        width: 40%;
+    }
+
+    form {
+        width: 50%;
+    }
+    img {
+        width: 90%;
+        margin: 2%;
+        padding: 0;
+    }
+    video {
+        position: absolute;
+        left: 0%;
+        top: 100%;
+        width: 40%;
+    }
+    main {
+        position: relative;
+        margin: 0;
+       }
+   
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) FIXED POSITION */
+ @media only screen and (min-width: 1200px) {
+    body {
+        width: 1200px;
+    }
+
+    article {
+        position: relative;
+        margin: 0px;
+    }
+  
+   aside {
+       position: absolute;
+       left: 600px;
+       top: 20px;
+   }
+   
+
+   p, pre {
+       width: 480px;
+   }
+
+   form {
+       width: 600px;
+   }
+   img {
+    margin: 10px;
+   }
+
+   video {
+       position: absolute;
+       left: 0px;
+       bottom: 0px;
+       width: 480px;
+   }
+
+   header {
+       width: 1200px;
+   }
+
+ } 
