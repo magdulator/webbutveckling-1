@@ -34,6 +34,25 @@ pre {
     width: 300px;
 }
 
+@media print {
+    body{
+        width: 100%;
+    }
+    header, audio, video {
+        display: none;
+    }
+    img, footer, form, header, table, p, article,figure, aside, video, h2, blockquote, audio, details, main{
+        width: 90%;
+        margin: 0%;
+        margin-top: 2%;
+        padding: 0%;
+    }
+
+    pre {
+        width: 90%;
+    }  
+}
+
   @media only screen and (min-width: 510px) {
     body{
         width: 100%;
