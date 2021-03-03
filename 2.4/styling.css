@@ -46,6 +46,13 @@ header>h1 {
     text-align: center;
 }
 
+ul {
+    list-style: square inside none;
+}
+ol {
+    list-style:armenian inside none;
+}
+
 footer {
     position: static;
     bottom: 0;
