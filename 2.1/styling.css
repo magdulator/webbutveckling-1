@@ -24,6 +24,11 @@ footer {
     bottom: 0;
 }
 
+table {
+    border-style: solid;
+    border-width: 1px;
+}
+
 pre {
     white-space: pre-wrap;
     width: 300px;
