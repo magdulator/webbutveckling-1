@@ -1,8 +1,11 @@
   /* extra small, under 500px FIXED POS */
-
-body, img, form, p, article, figure, video{
+body {
+    width: 500px;
+}
+img, form, footer, table, p, article,figure, aside, video, header, h2, blockquote, audio, details, main{
     width: 500px;
     margin: 0px;
+    margin-top: 5px;
     padding: 0;
 }
 
@@ -10,7 +13,6 @@ header > nav > a {
     display:block;
     float: none;
     text-align: center;
-
 }
  
 header>h1 {
@@ -27,17 +29,14 @@ pre {
     width: 300px;
 }
 
-
-
- 
- /*small, 500-600px FLOTING POS  */
- @media only screen and (min-width: 510px) {
+  @media only screen and (min-width: 510px) {
     body {
         width: 100%;
     }
-    img, form, p, article, aside, video, header, h2, blockquote, audio, details, main{
+    img, footer, form, table, p, article,figure, aside, video, header, h2, blockquote, audio, details, main{
         width: 100%;
         margin: 0%;
+        margin-top: 2%;
         padding: 0%;
     }
 
@@ -46,21 +45,21 @@ pre {
     }   
  }
 
- /* Small devices (portrait tablets and large phones, 600px and up) FLOATING POS */
  @media only screen and (min-width: 600px) {
-
-
     body {
         width: 100%;
     }
 
-    img, form, p, article, aside, video, header, h2, blockquote, audio, details, main{
+    footer,form, p, article, aside, header, h2, blockquote, details, main{
         width: 98%;
         margin: 2%;
     }
+    table, img, audio, video {
+        width: 70%;
+        margin: 3%;
+    }
 
     header {
-
         display:inline-block;
     }
 
@@ -78,10 +77,8 @@ pre {
 
  }
  
-
- /* Large devices (laptops/desktops, 992px and up) FLOATING POSITION */
  @media only screen and (min-width: 992px) {
-     article {
+     article, main {
          position: relative;
          margin: 0%;
      }
@@ -89,79 +86,75 @@ pre {
     aside {
         position: absolute;
         left: 50%;
-        top: 15%;
+        top: 10%;
+        margin: 0;
+        margin-left: 3%;
     }
 
-    p, pre {
+    dl, table, audio, video, p, pre, img{
         width: 40%;
+        margin-top: 0;
+    }
+    dl, table {
+        margin: 3%;
     }
 
     form {
         width: 50%;
     }
-    img {
-        width: 90%;
-        margin: 2%;
-        padding: 0;
-    }
+
     video {
         position: absolute;
         left: 0%;
         top: 100%;
-        width: 40%;
     }
-    main {
-        position: relative;
-        margin: 0;
-       }
-   
-    body {
-        width: 100%;
+    blockquote {
+        position: absolute;
+        left: 50%;
+        top: 10%;
     }
-    header {
-        width: 100%;
+    audio {
+        position: absolute;
+        left: 50%;
+        top: 30%;
     }
-
  }
  
- /* Extra large devices (large laptops and desktops, 1200px and up) FIXED POSITION */
  @media only screen and (min-width: 1200px) {
-    body {
+    body, header {
         width: 1200px;
     }
 
-    article {
-        position: relative;
+    article, main {
         margin: 0px;
     }
-  
-   aside {
-       position: absolute;
-       left: 600px;
-       top: 20px;
-   }
+
+    aside {
+        left: 600px;
+        top: 20px;
+        margin-left: 10px;
+    }
+
+    dl, table, audio, video, p, pre, img {
+        width: 500px;
+    }
+    form {
+        width: 600px;
+    }
+
+    video {
+        left: 0px;
+        bottom: 0px;
+        width: 480px;
+    }
    
-
-   p, pre {
-       width: 480px;
+   blockquote {
+       left: 600px;
+       top: 80px;
    }
-
-   form {
-       width: 600px;
-   }
-   img {
-    margin: 10px;
-   }
-
-   video {
-       position: absolute;
-       left: 0px;
-       bottom: 0px;
-       width: 480px;
-   }
-
-   header {
-       width: 1200px;
+   audio {
+       left: 600px;
+       top: 220px;
    }
 
  } 
