@@ -59,6 +59,9 @@ pre {
         width: 98%;
         margin: 2%;
     }
+    p,pre{
+        column-count: 2;
+    }
     table, img, audio, video {
         width: 70%;
         margin: 3%;
