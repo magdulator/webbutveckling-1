@@ -1,0 +1,310 @@
+body {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+img, form, footer, table, p, article,figure, aside, #videosmall, header, h2, blockquote, audio, details, main{
+    width: 500px;
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+header > nav > a {
+    display:block;
+    float: none;
+    text-align: center;
+    padding: 14px 16px;
+    cursor: grab;
+    font-family: Arial;
+    text-decoration: none;
+}
+a {
+    margin-left: 10px;
+}
+header {
+    background-color: gray;
+    padding: 10px;
+    margin: 0;
+}
+
+a:link {
+    background-color: gray;
+    color: black;
+}
+  
+a:visited {
+    color: white;
+}
+  
+a:hover {
+    background-color: blue;
+}
+  
+a:active {
+    background-color: black;
+    color: white;
+}
+ 
+header>h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: square inside none;
+}
+ol {
+    list-style:armenian inside none;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+}
+
+table {
+    table-layout: inherit;
+    border-style: solid;
+    border-width: 1px;
+}
+
+aside>p, table {
+    background: lightgray none no-repeat fixed center;
+}
+
+pre {
+    white-space: pre-wrap;
+    width: 300px;
+}
+
+#video {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.text-container {
+    position: fixed;
+    bottom: 0;
+    background: rgba(142, 142, 142, 0.5);
+    color: black;
+    width: 100%;
+    padding: 10px;
+  }
+.text-container>p {
+    font-size: 18px;
+}
+#pause-button {
+    margin: 20px;
+    margin-top: 0;
+    background-color: blue;
+    color: white;
+    border-style: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#pause-button:hover{
+    background-color: black;
+}
+  
+
+@font-face { font-family: JuneBug; src: url('JUNEBUG.TTF'); }
+
+aside>p {
+    color: gray;
+    font: 15px Arial, sans-serif;
+}
+
+pre {
+    color: #03fc88;
+    letter-spacing:10px; 
+}
+
+h1 {
+    font: 40px JuneBug, sans-serif;
+}
+
+h2 {
+    font: 20px Arial, sans-serif;
+}
+
+
+
+@media print {
+    body{
+        width: 100%;
+    }
+    header, audio, #videosmall {
+        display: none;
+    }
+    img, footer, form, header, table, p, article,figure, aside, #videosmall, h2, blockquote, audio, details, main{
+        width: 90%;
+        margin: 0%;
+        margin-top: 2%;
+        padding: 0%;
+    }
+
+    pre {
+        width: 90%;
+    }  
+}
+
+  @media only screen and (min-width: 510px) {
+    body{
+        width: 100%;
+    }
+    img, footer, form, header, table, p, article,figure, aside, #videosmall, h2, blockquote, audio, details, main{
+        width: 100%;
+        margin: 0%;
+        margin-top: 2%;
+        padding: 0%;
+    }
+
+    pre {
+        width: 90%;
+    }   
+ }
+
+ @media only screen and (min-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    footer, p, article, aside, header, h2, blockquote, details, main{
+        width: 98%;
+        margin: 2%;
+    }
+
+    form {
+        width: 90%;
+    }
+    section>p,pre{
+        column-count: 2;
+    }
+    table, img, audio, #videosmall {
+        width: 70%;
+        margin: 2%;
+    }
+
+    article > aside > p{
+        width: 10%;
+        float: left;
+    }
+
+    header {
+        display:inline-block;
+    }
+
+    header>nav {
+        overflow: hidden;
+    }  
+    header > nav > a {
+        margin-left: 3%;
+        float: left;
+    }
+    header > h1 {
+        margin: 0;
+        float:left;
+    }
+ }
+ 
+ @media only screen and (min-width: 992px) {
+     article, main {
+         position: relative;
+         margin: 0%;
+     }
+   
+    aside {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        margin: 0;
+        margin-left: 3%;
+    }
+
+    dl, table, audio, #videosmall, p, pre{
+        width: 40%;
+        margin-top: 0;
+    }
+
+    figure {
+        float: left;
+        margin: 0;
+        width: 30%; 
+    }
+    img {
+        width: 100%;
+    }
+    dl, table {
+        margin: 3%;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    #videosmall {
+        position: absolute;
+        left: 0%;
+        top: 100%;
+    }
+    blockquote {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+    }
+    audio {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+    }
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+    body, header {
+        width: 1200px;
+    }
+
+    article, main {
+        margin: 0px;
+    }
+
+    aside {
+        left: 600px;
+        top: 20px;
+        margin-left: 10px;
+    }
+
+    dl, table, audio, #videosmall, p, pre {
+        width: 500px;
+    }
+
+    figure {
+        float: left;
+        margin: 0;
+        width: 400px; 
+    }
+   
+    form {
+        width: 600px;
+    }
+
+    #videosmall {
+        left: 0px;
+        bottom: 0px;
+        width: 480px;
+    }
+   
+   blockquote {
+       left: 600px;
+       top: 80px;
+   }
+   audio {
+       left: 600px;
+       top: 240px;
+   }
+
+ } 
