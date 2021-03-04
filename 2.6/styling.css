@@ -64,6 +64,10 @@ table {
     border-width: 1px;
 }
 
+p, table {
+    background: lightgray none no-repeat fixed center;
+}
+
 pre {
     white-space: pre-wrap;
     width: 300px;
@@ -129,16 +133,26 @@ h2 {
         width: 100%;
     }
 
-    footer,form, p, article, aside, header, h2, blockquote, details, main{
+    footer, p, article, aside, header, h2, blockquote, details, main{
         width: 98%;
         margin: 2%;
     }
-    p,pre{
+
+    form {
+        width: 90%;
+    }
+    section>p,pre{
         column-count: 2;
     }
     table, img, audio, video {
         width: 70%;
-        margin: 3%;
+        margin: 2%;
+    }
+
+    article > aside > p{
+        width: 10%;
+        float: left;
+        column-count: 0;
     }
 
     header {
@@ -172,9 +186,18 @@ h2 {
         margin-left: 3%;
     }
 
-    dl, table, audio, video, p, pre, img{
+    dl, table, audio, video, p, pre{
         width: 40%;
         margin-top: 0;
+    }
+
+    figure {
+        float: left;
+        margin: 0;
+        width: 30%; 
+    }
+    img {
+        width: 100%;
     }
     dl, table {
         margin: 3%;
@@ -197,7 +220,7 @@ h2 {
     audio {
         position: absolute;
         left: 50%;
-        top: 30%;
+        top: 35%;
     }
  }
  
@@ -216,9 +239,16 @@ h2 {
         margin-left: 10px;
     }
 
-    dl, table, audio, video, p, pre, img {
+    dl, table, audio, video, p, pre {
         width: 500px;
     }
+
+    figure {
+        float: left;
+        margin: 0;
+        width: 400px; 
+    }
+   
     form {
         width: 600px;
     }
@@ -235,7 +265,7 @@ h2 {
    }
    audio {
        left: 600px;
-       top: 220px;
+       top: 240px;
    }
 
  } 
