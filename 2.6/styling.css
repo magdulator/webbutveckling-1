@@ -152,7 +152,6 @@ h2 {
     article > aside > p{
         width: 10%;
         float: left;
-        column-count: 0;
     }
 
     header {
