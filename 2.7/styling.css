@@ -1,7 +1,9 @@
 body {
     width: 500px;
+    margin: 0;
+    padding: 0;
 }
-img, form, footer, table, p, article,figure, aside, video, header, h2, blockquote, audio, details, main{
+img, form, footer, table, p, article,figure, aside, #videosmall, header, h2, blockquote, audio, details, main{
     width: 500px;
     margin: 0px;
     margin-top: 5px;
@@ -16,7 +18,9 @@ header > nav > a {
     cursor: grab;
     font-family: Arial;
     text-decoration: none;
-  
+}
+a {
+    margin-left: 10px;
 }
 header {
     background-color: gray;
@@ -64,7 +68,7 @@ table {
     border-width: 1px;
 }
 
-p, table {
+aside>p, table {
     background: lightgray none no-repeat fixed center;
 }
 
@@ -73,9 +77,43 @@ pre {
     width: 300px;
 }
 
+#video {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.text-container {
+    position: fixed;
+    bottom: 0;
+    background: rgba(142, 142, 142, 0.5);
+    color: black;
+    width: 100%;
+    padding: 10px;
+  }
+.text-container>p {
+    font-size: 18px;
+}
+#pause-button {
+    margin: 20px;
+    margin-top: 0;
+    background-color: blue;
+    color: white;
+    border-style: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#pause-button:hover{
+    background-color: black;
+}
+  
+
 @font-face { font-family: JuneBug; src: url('JUNEBUG.TTF'); }
 
-p {
+aside>p {
     color: gray;
     font: 15px Arial, sans-serif;
 }
@@ -93,14 +131,16 @@ h2 {
     font: 20px Arial, sans-serif;
 }
 
+
+
 @media print {
     body{
         width: 100%;
     }
-    header, audio, video {
+    header, audio, #videosmall {
         display: none;
     }
-    img, footer, form, header, table, p, article,figure, aside, video, h2, blockquote, audio, details, main{
+    img, footer, form, header, table, p, article,figure, aside, #videosmall, h2, blockquote, audio, details, main{
         width: 90%;
         margin: 0%;
         margin-top: 2%;
@@ -116,7 +156,7 @@ h2 {
     body{
         width: 100%;
     }
-    img, footer, form, header, table, p, article,figure, aside, video, h2, blockquote, audio, details, main{
+    img, footer, form, header, table, p, article,figure, aside, #videosmall, h2, blockquote, audio, details, main{
         width: 100%;
         margin: 0%;
         margin-top: 2%;
@@ -144,7 +184,7 @@ h2 {
     section>p,pre{
         column-count: 2;
     }
-    table, img, audio, video {
+    table, img, audio, #videosmall {
         width: 70%;
         margin: 2%;
     }
@@ -185,7 +225,7 @@ h2 {
         margin-left: 3%;
     }
 
-    dl, table, audio, video, p, pre{
+    dl, table, audio, #videosmall, p, pre{
         width: 40%;
         margin-top: 0;
     }
@@ -206,7 +246,7 @@ h2 {
         width: 50%;
     }
 
-    video {
+    #videosmall {
         position: absolute;
         left: 0%;
         top: 100%;
@@ -238,7 +278,7 @@ h2 {
         margin-left: 10px;
     }
 
-    dl, table, audio, video, p, pre {
+    dl, table, audio, #videosmall, p, pre {
         width: 500px;
     }
 
@@ -252,7 +292,7 @@ h2 {
         width: 600px;
     }
 
-    video {
+    #videosmall {
         left: 0px;
         bottom: 0px;
         width: 480px;
