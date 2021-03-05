@@ -43,17 +43,18 @@
             <form action = "https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" enctype="multipart/form-data" method="post">
                 <fieldset>
                 <legend>Fyll i formulär:</legend>
-                <label for="name">Namn: </label>
+                <label for="name">Namn: </label><br>
+                <i class="fa fa-envelope icon"></i>
                 <input type="text" id="name" name="name" placeholder="Namn" autofocus required title="Skriv ditt namn"><br>
-                <label for="email">Email:</label>
+                <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Ej giltig email"><br>
-                <label for="homepage">Hemsida:</label>
+                <label for="homepage">Hemsida:</label><br>
                 <input list="url" id="homepage" name="homepage" placeholder="Hemsida"><br>
                 <datalist id="homepage">
                     <option value="facebook">
                     <option value="twitter">
                     <option value="instagram">
-                </datalist>
+                </datalist><br>
                 <label for="respond">Vill ha svar:</label>
                 <input type="checkbox" id="respond" name="respond"><br>
                 <label for="copy">Kopia</label>
@@ -66,9 +67,9 @@
                     <option value="contact">Kontakt för samtal</option>
                     <option value="other">Övrigt</option>
                 </select><br>
-                <label for="filename">Ladda upp fil</label>
+                <label for="filename">Ladda upp fil</label><br>
                 <input type="file" id="file" name="file"><br>
-                <label for="message">Meddelande: </label>
+                <label for="message">Meddelande: </label><br>
                 <textarea id="message" name="message" placeholder="Skriv ett meddelande.." required title="Skriv ett meddelande"></textarea><br>
                 <input type ="submit" value="Skicka">
                 </fieldset>

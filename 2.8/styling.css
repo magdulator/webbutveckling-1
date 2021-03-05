@@ -91,7 +91,7 @@ pre {
     color: black;
     width: 100%;
     padding: 10px;
-  }
+}
 .text-container>p {
     font-size: 18px;
 }
@@ -105,11 +105,31 @@ pre {
     padding: 10px;
     cursor: pointer;
 }
-
+form {
+    font-family: Arial;
+}
 #pause-button:hover{
     background-color: black;
 }
-  
+textarea {
+    padding: 5px 25px;
+    resize: none;
+}
+input {
+    padding: 5px 25px;
+}
+input[type=email] {
+    background-image: url('brev.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 25px;
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+input:focus {
+    background-color: lightblue;
+}
 
 @font-face { font-family: JuneBug; src: url('JUNEBUG.TTF'); }
 
@@ -130,8 +150,6 @@ h1 {
 h2 {
     font: 20px Arial, sans-serif;
 }
-
-
 
 @media print {
     body{
@@ -212,10 +230,10 @@ h2 {
  }
  
  @media only screen and (min-width: 992px) {
-     article, main {
-         position: relative;
-         margin: 0%;
-     }
+    article, main {
+        position: relative;
+        margin: 0%;
+    }
    
     aside {
         position: absolute;
@@ -306,5 +324,4 @@ h2 {
        left: 600px;
        top: 240px;
    }
-
  } 
