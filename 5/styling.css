@@ -1,0 +1,239 @@
+h2, p, a, li, blockquote, figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, blockquote, a {
+    font-size: 1.0rem;
+}
+
+body {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+header > nav > a {
+    display:block;
+    float: none;
+    text-align: center;
+    padding: 14px 16px;
+    cursor: grab;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+article, main {
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(59, 58, 58);
+    margin: 0;
+    padding: 0;
+}
+figure, img {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+}
+.product-list>li{
+    display: block;
+    margin: 10px;
+}
+.product-pic{
+    float: right;
+    padding: 3px;
+    width: 150px;
+}
+button {
+    padding: 8px;
+    border-style: none;
+    background-color:rgb(70, 121, 70);
+    color: white;
+    cursor: pointer;
+}
+a:hover, a:active {
+    background-color: darkgray;
+
+}
+ul {
+    padding: 0;
+}
+
+ol {
+    background: rgb(233, 231, 231) none no-repeat fixed center;
+    table-layout: inherit;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+li {
+    padding: 5px;
+}
+
+footer {
+    background-color: rgb(59, 58, 58);
+    color: white;
+    padding: 14px;
+    position: static;
+}
+
+footer>p, footer>a {
+    margin: 10px;
+}
+footer>a {
+    color: white;
+}
+
+@media print {
+    body{
+        width: 100%;
+    }
+    header {
+        display: none;
+    }
+    img, footer, header,p, article,figure, aside, h2, blockquote, main{
+        width: 90%;
+        margin: 0%;
+        margin-top: 2%;
+        padding: 0%;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    body{
+        width: 100%;
+    }
+    img, footer, header,p, article,figure, aside, h2, blockquote, main{
+        width: 100%;
+        margin: 0%;
+        margin-top: 2%;
+    }
+}
+
+
+ @media only screen and (min-width: 600px) {
+    p, blockquote, a {
+        font-size: 1.1rem;
+    }
+    
+    header{
+        margin: 0;
+    }
+    footer {
+        padding: 2%;
+    }
+    
+
+    body {
+        width: 100%;
+    }
+    main, article {
+        width: 95%;
+        margin: 2.5%;
+        display: inline-block;
+    }
+
+    header {
+        display:inline-block;
+    }
+
+    header>nav {
+        overflow: hidden;
+    }  
+    header > nav > a {
+        margin-left: 3%;
+        float: left;
+        padding: 20px 15px;
+    }
+
+    .product-list {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    button {
+        margin-top: 3%;
+    }
+
+    .product-list>li{
+        display: block;
+        margin: 2%;
+    }
+
+    .product-pic{
+        float: none;
+        padding: 1%;
+        max-width: 100%;
+    }
+    section{
+        display: block;
+    }
+    
+    ol {
+        max-width: 60%;
+    } 
+    #intro{
+        column-count: 2;
+    }  
+     
+ }
+ 
+ @media only screen and (min-width: 992px) {
+    
+    main {
+        position: relative;
+    }
+    main {
+        width: 50%;
+        margin: 4%;
+    }
+    ol {
+        max-width: 90%;
+    }
+    article {
+        position: absolute;
+        margin: 4%;
+        top: 10%;
+        right: 0;
+        width: 35%;
+    }
+   
+    footer {
+        position: static;
+        display:inline-block;
+        margin-top: 15%;
+        width: 100%;
+    }
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+
+    .product-pic{
+        width: 200px;
+    }
+    article, main {
+        margin: 40px;
+    }
+    main {
+        width: 600px;  
+    }
+
+    footer{
+        margin-top: 150px;
+    }
+
+    ol {
+        max-width: 500px;
+    }
+    article {
+        right: 40px;
+        top: 50px;
+        max-width: 600px;
+    }
+    article>aside>figure {
+        max-width: 450px;
+    }
+ } 
